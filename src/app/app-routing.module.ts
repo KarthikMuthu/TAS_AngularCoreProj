@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './loginpage/login.component';
 
-
 const routes: Routes = [
   // { path: 'demo', component: DemoComponent },
     { path: '', component: LoginComponent }
