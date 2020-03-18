@@ -1,11 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LoginComponent } from './loginpage/login.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  // { path: 'demo', component: DemoComponent },
+    { path: '', component: LoginComponent }
+  // { path: 'careerpage', component: CareerpageComponent },
+  //  { path: 'careerpage/:uname', component: CareerpageComponent },
+  //  { path: 'applicationform', component: ApplicationformComponent},
+  //  { path: 'admin-page', component: AdminPageComponent},
+  //  { path: 'displaycareerdet', component: DisplaycareerdetComponent},
+  //  { path: 'fileupload', component: FileuploadComponent},
+  //{ path: 'applicationform/:uname', component: ApplicationformComponent},
+  // { path: '', component: LoginpageComponent}
+ ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  declarations: []
 })
 export class AppRoutingModule { }
