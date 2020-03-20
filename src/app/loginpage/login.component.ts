@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import * as $ from "jquery";
+declare const Validate: any;
+
 
 
 @Component({
@@ -12,6 +15,10 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  CheckValidate(){
+    Validate();
   }
 
 }
