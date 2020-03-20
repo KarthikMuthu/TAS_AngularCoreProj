@@ -4,7 +4,6 @@ import * as $ from "jquery";
 declare const Validate: any;
 
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

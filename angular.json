@@ -34,8 +34,12 @@
               "node_modules/jquery/dist/jquery.validate.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
+<<<<<<< HEAD
               "node_modules/feather-icons/dist/feather.min.js",
               "src/assets/script.js"
+=======
+              "src/assets/js/script.js"
+>>>>>>> ce7b45e4c369d905086dde6b93f92c74d1b1a836
             ]
           },
           "configurations": {

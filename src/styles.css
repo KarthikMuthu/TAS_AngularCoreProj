@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 html, body {
@@ -57,3 +58,217 @@ html, body {
 a{
     color:#fff;
 }
+=======
+
+.container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/*header*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 4.5rem;
+}
+.container-fluid, .header-nav .col-12{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+body{
+    background-color: #f3f4f7 !important;
+}
+.heading-color, .nav-link{
+    color: #4b4b5a;
+}
+.text-color{
+    color: #6c757d;
+}
+.text-color-blue{
+    color: #5369f8;
+}
+.icon-color{
+    color: #2c3d4f;
+}
+.button-blue{
+    background-color: #5369f8;
+}
+.button-grey{
+    background-color: #6c757d;
+}
+.header-nav, #sidenav{
+    background-color: #fff;
+}
+.navbar-dark{
+    padding: 0px;
+}
+
+/*header*/
+
+.logo{
+    height: 97%;
+    width: 35%;
+}
+.header-nav{
+    border-bottom: 1px solid #ccc;
+}
+.menu p{
+    padding-left: 2.5rem;
+}
+button.search{
+    border: 1px solid #ccc;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #ccc;
+}
+input.bg-search{
+    background-color: #ccc;
+}
+.search-w{
+    width: 100% !important;
+}
+.feather.feather-user {
+    background: #ccc;
+    border-radius: 50%;
+    padding: 5px;
+}
+.down-arr i-feather{
+    background-color: #ccc;
+    border-radius: 20%;
+}
+.header-icon{
+    display: flex;
+    justify-content: center;
+}
+.nav-link:hover {
+  transition: all 0.4s;
+}
+
+.nav-link-collapse:after {
+  float: right;
+  content: '\f067';
+  font-family: 'FontAwesome';
+}
+
+.nav-link-show:after {
+  float: right;
+  content: '\f068';
+  font-family: 'FontAwesome';
+}
+
+.nav-item ul.nav-second-level {
+  padding-left: 0;
+}
+
+.nav-item ul.nav-second-level > .nav-item {
+  padding-left: 20px;
+}
+.nav-link{
+    color: #000;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: blue !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #000 !important;
+}
+.sidenav{
+    background-color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover{
+    border-left: 5px solid #5369f8;
+    background: #f6f7ff;
+    color: #5369f8 !important;
+}
+.navbar-dark .hr-exe .navbar-nav .nav-link:hover{
+    border-left: 0;
+    background: none;
+}
+.hr-exe p{
+    margin-bottom: 0px;
+}
+.btn.dropdown-toggle {
+    padding: 0px 7px;
+    background: #ccc;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.icon-color{
+    display: inline-block;
+    width: 21px !important;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/*end-of-header*/
+
+/*section*/
+
+/*end-of-section*/
+
+/*footer*/
+
+/*end-of-footer*/
+
+/*media query*/
+
+   @media (min-width: 320px) and (max-width: 767px){  
+    /* .navbar-dark{
+        background-color: #fff;
+    } */
+   }
+    
+   @media (min-width: 768px) and (max-width: 991px) {  
+    
+   }
+    
+   @media (min-width: 992px) and (max-width: 1199px) {
+    .sidenav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: calc(100vh - 2rem);
+        box-sizing: border-box;
+        /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
+      }
+    
+      .navbar-expand-lg .sidenav {
+        flex-direction: column !important;
+      }
+    
+      .content-wrapper {
+        margin-left: 230px;
+      }
+
+   }
+    
+   @media (min-width: 1200px) {  
+    .sidenav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: calc(100vh - 2rem);
+        box-sizing: border-box;
+        /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
+      }
+    
+      .navbar-expand-lg .sidenav {
+        flex-direction: column !important;
+      }
+    
+      .content-wrapper {
+        margin-left: 230px;
+      }
+   }
+>>>>>>> ce7b45e4c369d905086dde6b93f92c74d1b1a836
