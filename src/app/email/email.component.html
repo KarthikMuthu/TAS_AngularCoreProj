@@ -1,0 +1,109 @@
+
+<!-- [disabled]="emailform.invalid" autocomplete="off" #emailform="ngForm" -->
+
+<!-- <div class="container">
+<form method="post" name="EmailTemplate" (ngSubmit)="SubmitEmail(emailform)">
+<div class="row col-md-12">
+    <div class="form-group col-md-2">
+    <label>From</label>
+    </div>
+    <div class="form-group col-md-4">
+        <input type="email" size=65 name="from_email" [(ngModel)]="from_email" class="form-control" 
+        required="required" > 
+    </div>
+ 
+ 
+    <div class="form-group col-md-2">
+    <label>To</label>
+    </div>
+    <div class="form-group col-md-4">
+        <input type="email" size=65 name="to_email" class="form-control" [(ngModel)]="to_email"
+         required="required"> 
+    </div>
+</div>
+
+<br>
+  <div class="row col-md-12">
+    <div class="form-group col-md-2">
+    <label>Subject</label>
+    </div>
+    <div class="form-group col-md-4">
+        <input type="text" size=65 name="subject" class="form-control" [(ngModel)]="subject"
+         required="required"> 
+    </div>
+  
+  
+    <div class="form-group col-md-2">
+    <label>Body</label>
+    </div>
+    <div class="form-group col-md-4">
+        <textarea rows="4" cols="6" name="body" class="form-control" [(ngModel)]="body"
+         required="required"></textarea>
+    </div>  
+</div>
+<div class="row col-md-6 offset-md-4">
+    <button class="button-blue text-white login-btn float-right mr-5" id="submit" type="submit" 
+    (click)="Validate_Email()">Submit</button>
+</div>
+</form>
+</div>
+ -->
+
+ <div class="col-md-9">
+    <form class="form-horizontal" id="Emailtemplate">
+    <div class="panel panel-default">
+        <div class="panel-body message">
+            <h3 class="text-center text-success">COMPOSE MAIL</h3>
+            
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">TO</label>
+                    <div class="col-sm-11">
+                          <input type="email" autofocus class="form-control"
+                          required="required" name="to_email" [(ngModel)]="to_email">
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">CC</label>
+                    <div class="col-sm-11">
+                          <input type="email" class="form-control select2-offscreen"
+                          required="required" name="cc_email" [(ngModel)]="cc_email">
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">BCC</label>
+                    <div class="col-sm-11">
+                          <input type="email" class="form-control select2-offscreen"
+                          required="required" name="bcc_email" [(ngModel)]="bcc_email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-1 control-label">SUBJECT</label>
+                    <div class="col-sm-11">
+                          <input type="text" name="subject" class="form-control select2-offscreen"
+                           id="subject" required="required" [ngModel]="subject">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-1 control-label">Attachments</label>
+                    <div class="col-sm-11">
+                          <input type="file" multiple="multiple" class="form-control select2-offscreen"
+                          required="required" name="attachments" [(ngModel)]="attachments">
+                    </div>
+                  </div>
+           
+            
+            <div class="col-sm-11 col-sm-offset-1">  
+                <br>	
+                <div class="form-group">
+                    <textarea class="form-control" name="body" rows="12" required="required"
+                     placeholder="Click here to reply"></textarea>
+                </div>
+                
+                <div class="form-group">	
+                    <button type="submit" class="btn btn-success" (click)="SendEmail()">Send</button>&nbsp;
+                    <button type="submit" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>	
+        </div>	
+    </div>	
+</form>

@@ -1,5 +1,6 @@
-import { Component, AfterViewInit  } from '@angular/core';
+import { Component, AfterViewInit, OnInit, OnDestroy  } from '@angular/core';
 import * as Feather from 'feather-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,13 @@ import * as Feather from 'feather-icons';
 })
 export class AppComponent implements AfterViewInit {
   title = 'RecruitProcess';
+  constructor() {
+
+  }
 
   ngAfterViewInit() {
     Feather.replace();
   }
+
+  
 }

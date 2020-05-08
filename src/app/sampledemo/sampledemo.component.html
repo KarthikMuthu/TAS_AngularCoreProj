@@ -1,0 +1,121 @@
+<!-- <div id="logreg-forms">
+   <form class="form-signin">
+       <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+       <div class="social-login">
+           <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+           <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
+       </div>
+       <p style="text-align:center"> OR  </p>
+       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+       
+       <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+       <a href="#" id="forgot_pswd">Forgot password?</a>
+       <hr>
+       
+       <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+       </form>
+
+       <form action="/reset/password/" class="form-reset">
+           <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+           <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
+           <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+       </form>
+       
+       <form action="/signup/" class="form-signup">
+           <div class="social-login">
+               <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
+           </div>
+           <div class="social-login">
+               <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>
+           </div>
+           
+           <p style="text-align:center">OR</p>
+
+           <input type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">
+           <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
+           <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+           <input type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">
+
+           <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+           <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
+       </form>
+       <br>
+       
+</div> -->
+
+<div class="wrapper">
+    <div class="container form-cntr">
+        <div class="row mx-auto lg-frm">
+            <div class="col-md-6 border pl-5 pr-5 pt-3 pb-3 bg-white">
+                <div class="row">
+                    <div class="col-5 mt-3">
+                        <img src="assets/6Solvelogo.jpg" class="img-fluid">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-11 pt-3">                        
+                        <h3 class="heading-color">Welcome back!</h3>
+                        <p class="text-color lgn-font-size">Enter your email-address and password to <br>access admin panel.
+                    </div> 
+                </div>
+                <div class="row"> 
+                    <div class="col-12 mb-3">
+                    <form id="Registr_form" (ngSubmit)="Submit(loginform)"> 
+                        <div class="form-row"> 
+                            <div class="form-group email-pass">
+                                <label class="text-color ">Email Address</label> 
+                                    <div class="d-flex">
+                                        <span class="p-1 border rounded-left">
+                                         <i-feather name="Mail" class="icon-color">                                             
+                                         </i-feather>
+                                        </span>
+                                        <input type="text" size=65 name="email"class="email required input-field" 
+                                         title="Please enter the email address" autocomplete="off" [(ngModel)]="email">                                     
+                                    </div>
+                                    <label id="email-error" class="error email-error" for="email"></label>
+                            </div>
+                            <div class="form-group email-pass">
+                                <label class="text-color ">Password</label>
+                                <label class="float-right"><a href="#" class="text-color">Forgot your password?</a></label> 
+                                    <div class="d-flex">     
+                                        <span class="p-1 border rounded-left">
+                                        <i-feather name="Lock" class="icon-color">                                            
+                                        </i-feather>
+                                        </span>
+                                        <input type="password" size=65 name="password" class="input-field required" 
+                                        title="Please enter the password" id="password" [(ngModel)]="password">      
+                                    </div>
+                                    <label id="password-error" class="error password-error" for="password"></label>
+                            </div>
+                            <div class="form-group">
+                                <label class="customcheck">
+                                    <input type="checkbox">Remember me <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <button class="w-100 button-blue text-white login-btn" id="submit" (click)="CheckValidate()"
+                            >Login</button>
+                                <div class="text-center w-100 p-1">(or)</div>
+                            <button class="w-100 button-grey text-white login-btn">Login with Google</button>
+                        </div> 
+                    </form>
+                    </div>
+ 
+                </div>
+            </div>
+            <div class="col-md-6 pl-0 form-img">
+                <img src="assets/450-520.jpg" class="img-fluid">
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="img-text position-relative">
+                            <h4 class="text-center text-white">I simply love it!</h4>
+                                <p class="text-center text-white">"It's a elegant template. I love it very much!"</p>
+                                <p class="text-center text-white">-Admin User</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--container end-->
+</div><!--wrapper end-->

@@ -1,0 +1,789 @@
+<div class="wrapper">
+  <div class="container-fluid">
+    <header>
+      <input type="hidden" id="hdnmandskills">
+      <!-- navbar for large screen -->
+      <div class="d-none d-sm-block">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">
+        <img src="assets/6Solvelogo.jpg" class="d-inline-block align-top logo" alt="logo-image">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <div class="main pt-2">
+                  <div class="form-group has-search text-search">
+                    <i-feather name="search" class="icon-color form-control-feedback"></i-feather>
+                    <input type="text" class="form-control" id="search" placeholder="Search">
+                  </div>
+                </div>
+          </li>
+          <li class="dropdown p-2">
+              <a href="#" class="dropdown-toggle notify-bell" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a href="#" data-toggle="tooltip" data-placement="left" title="8 new unread notifications">
+                  <i-feather name="bell" class="icon-color"></i-feather><span class="dot"></span>
+                </a>
+              </a>
+              <ul class="dropdown-menu notify-drop">
+                <div class="notify-drop-title">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">Notification (<b>2</b>)</div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 text-right">Clear all</div>
+                    </div>
+                </div>
+                <div class="drop-content">
+                    <li>
+                        <div class="row">
+                        <div class="col-2 col-md-2 notify-img">
+                          <i-feather name="user" class="icon-color"></i-feather>
+                        </div>
+                        <div class="col-9 col-md-9 offset-1">
+                          <p>Lorem ipsum sit dolor amet consilium.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                </div>
+              </ul>
+            </li>
+          <li class="nav-item settings-icon p-2">
+              <i-feather name="settings" class="icon-color"></i-feather>
+          </li>
+        </ul>
+        </div>
+        </nav>
+      </div>
+        <!-- NavBar END for large screen -->
+      
+        <!-- navbar for small screen -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top d-sm-none">
+                
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img src="assets/6Solvelogo.jpg" class="d-inline-block align-top logo" alt="logo-image">
+            </a>
+            <ul class="navbar-nav small-bell">
+              <li class="dropdown p-2">
+                  <a href="#" class="dropdown-toggle notify-bell" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" data-toggle="tooltip" data-placement="left" title="8 new unread notifications">
+                      <i-feather name="bell" class="icon-color"></i-feather><span class="dot"></span>
+                    </a>
+                  </a>
+                </li>
+              <li class="nav-item settings-icon p-2">
+                  <i-feather name="settings" class="icon-color"></i-feather>
+              </li>
+            </ul>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <!-- Separator with title -->
+              <li class="nav-item">
+                <div class="main pt-2">
+                    <div class="form-group has-search text-search">
+                      <i-feather name="search" class="icon-color form-control-feedback"></i-feather>
+                      <input type="text" class="form-control" id="search" placeholder="Search">
+                    </div>
+                  </div>
+            </li>
+              <li class="list-group-item sidebar-separator-title d-flex align-items-center menu-collapsed">
+                  <small>NAVIGATION</small>
+              </li>
+          
+              <a href="/dashboard" class="list-group-item list-group-item-action active border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed" id="dashspanid"><i-feather name="home" class="active mr-4"></i-feather>Dashboard</span>
+                  </div>
+              </a>
+              <!-- /END Separator -->
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0" (click)="NavigateTasks()">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed" id="taskspanid"><i-feather name="bookmark" class="mr-4"></i-feather>Tasks</span>
+                  </div>
+              </a>
+              <a href="/requisition" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed" id="reqspanid"><i-feather name="briefcase" class="mr-4"></i-feather>Requisition</span>
+                  </div>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0" (click)="NavigateCandidate()">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed" id="candspanid"><i-feather name="award" class="mr-4"></i-feather>Candidates</span>
+                  </div>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed"><i-feather name="layers" class="mr-4"></i-feather>Application</span>
+                  </div>
+              </a>
+              <a href="/calendar" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed" id="calspanid"><i-feather name="calendar" class="mr-4"></i-feather>Calendar</span>
+                  </div>
+              </a>
+            </ul>
+          </div>
+        </nav>
+        <!-- NavBar END for small screen -->
+      
+        <div class="row" id="body-row">
+      
+        <!-- Sidebar for large screen -->
+      
+        <div id="sidebar-container" class="sidebar-expanded d-none d-xl-block col-2">
+        <ul class="list-group sticky-top sticky-offset">
+          <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+          </li>
+          <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start recent border-0">
+              <div class="d-flex w-100 justify-content-start align-items-center profile">
+                  <i-feather name="user" class="icon-color user"></i-feather>
+                  <span class="menu-collapsed pl-3">{{userparamvalue}}<p>{{user_rolevalue}}</p></span>
+                  <span class="submenu-icon ml-auto"></span>
+              </div>
+          </a>
+          <div id="submenu2" class="collapse sidebar-submenu">
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                  <span class="menu-collapsed"><span><i-feather name="user"></i-feather></span><span class="pl-3">My Accounts</span></span>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                  <span class="menu-collapsed"><span><i-feather name="settings"></i-feather></span><span class="pl-3">Settings</span></span>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                  <span class="menu-collapsed"><span><i-feather name="alert-circle"></i-feather></span><span class="pl-3">Support</span></span>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action" (click)="Logout()">
+                  <span class="menu-collapsed"><span><i-feather name="log-out"></i-feather></span><span class="pl-3">Logout</span></span>
+              </a>
+          </div>
+            <li class="list-group-item sidebar-separator-title d-flex align-items-center menu-collapsed">
+                <small>NAVIGATION</small>
+            </li>
+        
+            <a href="/dashboard" id="dashid" class="list-group-item active list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="menu-collapsed" id="dashspanid"><i-feather name="home" class="mr-4"></i-feather>Dashboard</span>
+                </div>
+            </a>
+            <a href="/tasks" id="taskid" class="list-group-item list-group-item-action ">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="menu-collapsed" id="taskspanid"><i-feather name="bookmark"  class="mr-4"></i-feather>Tasks</span>
+                </div>
+            </a>
+            <a href="/requisition" id="reqid" class="list-group-item list-group-item-action ">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="menu-collapsed" id="reqspanid" ><i-feather name="briefcase" class="mr-4"></i-feather>Requisition</span>
+                </div>
+            </a>
+            <a href="javascript:void(0)" id="candid" class="list-group-item list-group-item-action " (click)="NavigateCandidate()">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="menu-collapsed" id="candspanid"><i-feather name="award" class="mr-4"></i-feather>Candidates</span>
+                </div>
+            </a>
+            <a href="javascript:void(0)" id="appid" class="list-group-item list-group-item-action ">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="menu-collapsed" id="appspanid"><i-feather name="layers" class="mr-4"></i-feather>Application</span>
+                </div>
+            </a>
+            <a href="/calendar" id="calid" class="list-group-item list-group-item-action ">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="menu-collapsed" id="calspanid"><i-feather name="calendar" class="mr-4"></i-feather>Calendar</span>
+                </div>
+            </a>
+        </ul>
+        <!-- List Group END-->
+        </div>
+        <!-- sidebar-container END for large screen -->
+        
+        <!-- Sidebar for medium-size screen -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-sm-block d-xl-none col-2">
+          <ul class="list-group sticky-top sticky-offset">
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed"> 
+            </li>
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start recent border-0">
+                <div class="d-flex w-100 justify-content-start align-items-center profile">
+                    <i-feather name="user" class="icon-color user"></i-feather>
+                    <span class="menu-collapsed pl-3">Rani</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <div id="submenu2" class="collapse sidebar-submenu">
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                <span class="menu-collapsed"><span><i-feather name="user"></i-feather></span><span class="pl-3 hr-detail">Account</span></span>
+            </a>
+            <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                <span class="menu-collapsed"><span><i-feather name="settings"></i-feather></span><span class="pl-3 hr-detail">Settings</span></span>
+            </a>
+            <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                <span class="menu-collapsed"><span><i-feather name="alert-circle"></i-feather></span><span class="pl-3 hr-detail">Support</span></span>
+            </a>
+            <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                <span class="menu-collapsed"><span><i-feather name="log-out"></i-feather></span><span class="pl-3 hr-detail">Logout</span></span>
+            </a>
+            </div>
+              <li class="list-group-item sidebar-separator-title d-flex align-items-center menu-collapsed">
+                  <small>NAVIGATION</small>
+              </li>
+          
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action active border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed med-menu"><i-feather name="home" class="active mr-4"></i-feather></span>
+                  </div>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed med-menu"><i-feather name="bookmark" class="mr-4"></i-feather></span>
+                  </div>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed med-menu"><i-feather name="briefcase" class="mr-4"></i-feather></span>
+                  </div>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed med-menu"><i-feather name="award" class="mr-4"></i-feather></span>
+                  </div>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed med-menu"><i-feather name="layers" class="mr-4"></i-feather></span>
+                  </div>
+              </a>
+              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="menu-collapsed med-menu"><i-feather name="calendar" class="mr-4"></i-feather></span>
+                  </div>
+              </a>
+          </ul>
+          <!-- List Group END-->
+          </div>
+          <!-- sidebar-container END for medium-size screen -->
+
+<!-- MAIN -->
+<!-- MAIN -->
+<div class="col-md-10 col-12 py-3 p-4">
+  <h4 class="p-4">New Requisition</h4>
+  <form name="newrequist" id="NewRequisition" method="post" #newrequform="ngForm">
+  <div class="row">
+  
+  <div class="col-md-6 bg-white p-4 reqstn-fields">
+  <h4 class="pr-4 pt-3 pb-4 requisition-heading">New Requisition Overview</h4>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-5 col-5">
+    <label>Job Title</label>
+    </div> 
+      <div class="form-group col-md-7 col-7">
+        <select class="form-control select2" id="jobtitle" #jb
+        [(ngModel)]="assigninhtmlctrl.JobTitleFKID" name="jobtitle">
+          <option value="0"></option>
+          <option *ngFor="let jobs of reqservice.bindjobtitle" value="{{jobs.JobTitlePKID}}">
+            {{jobs.JobTitleName}} </option>
+         <!-- <option>Web Developer</option> 
+         <option>.Net Developer</option> 
+         <option>UI Developer</option> (change)="ChangeCity($event.target.value)"  -->
+        </select> 
+        <!-- <label for="jobtitle" class="myErrorClass">This field is required.</label> -->
+    </div>
+
+  </div>
+  <div class="form-row formrow-height"> 
+    <div class="form-group col-md-5 col-5">      
+      <label>No.of openings </label>
+    </div>	
+    <div class="form-group col-md-7 col-7">
+      <input type="number" size=65 name="JobOpeningsCount" [(ngModel)]="assigninhtmlctrl.JobOpeningsCount" min="0" max="15"  
+      class="form-control" (keypress)="onlyNumber(event)" required> 
+      <!-- <span class="error" id="tele_err" style="display: none;">Please Enter the no of openings</span>       -->
+    </div>
+  </div>
+  <div class="form-row formrow-height"> 
+    <div class="form-group col-md-5">      
+      <label>Start Date&End Date</label>
+    </div>	
+    <div class="form-group col-md-7">
+      <div class="row">
+        <div class="col-md-6 col-6">
+          <input type="text" size=65 class="form-control" id="StartDate" #sd
+          [(ngModel)]="assigninhtmlctrl.StartDate" name="StartDate"> 
+        </div>
+        <div class="col-md-6 col-6">
+          <input type="text" size=65 name="EndDate" class="form-control" id="EndDate" #ed
+          [(ngModel)]="assigninhtmlctrl.EndDate"> 
+        </div>
+        <!-- <label for="date" class="error date-error ml-3">This field is required.</label> -->
+       </div>      
+    </div>
+    </div>
+  
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-5 col-5">
+    <label>Department</label>
+    </div>
+      <div class="form-group col-md-7 col-7">
+        <select class="form-control select2" name="department" id="department" #nd
+        [(ngModel)]="assigninhtmlctrl.DepartmentFKID" (change)="onChangeDepartment($event.target.value)">
+          <option value="0"></option>
+          <option *ngFor="let depts of reqservice.bindDept" value="{{depts.DepartmentPKID}}">
+            {{depts.DepartmentName}} </option>
+        </select>
+    </div>
+  </div>
+  <div class="form-row formrow-height"> 
+    <div class="form-group col-md-5 col-5">      
+      <label>Overall Experience</label>
+    </div>	 
+    <div class="form-group col-md-7 col-7">
+      <input type="number" size=65 name="OverallExperience" [(ngModel)]="assigninhtmlctrl.OverallExperience" min="0" max="15"
+      class="form-control" (keypress)="onlyNumber(event)" required> 
+     <!-- <span class="error" id="tele_err" style="display: none;">Please Enter the overall experience</span> -->     
+    </div>
+  </div>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-5">
+    <label>Location</label>
+    </div>
+      <div class="form-group col-md-7">
+        <div class="row">
+          <div class="col-md-6 col-6 pr-1 pb-3">
+            <select class="form-control select2" name="joblocation" id="joblocation" #nl
+            [(ngModel)]="assigninhtmlctrl.LocationFKID">
+             <option value="0"></option>
+            <option *ngFor="let cit of reqservice.bindregion" value="{{cit.LocationPKID}}">
+              {{cit.LocationName}} </option>
+           </select>
+          </div>
+          <div class="col-md-6 col-6 pl-1 pb-3">
+            <select class="form-control select2" name="country" id="country" #cou
+            [(ngModel)]="assigninhtmlctrl.StateFKID">
+             <option value="0"></option>
+            <option *ngFor="let coun of reqservice.bindcountry" value="{{coun.StatePKID}}">
+              {{coun.StateName}} </option>
+           </select>
+           <!-- <label for="location" class="error location-error">This field is required.</label> -->
+          </div>
+          <div class="col-md-6 col-6 pr-1">
+            <select class="form-control select2" name="statecity" id="statecity" #cit
+            [(ngModel)]="assigninhtmlctrl.CityFKID">
+             <option value="0"></option>
+            <option *ngFor="let cit of reqservice.bindcity" value="{{cit.CityPKID}}">
+              {{cit.CityName}} </option>
+           </select>
+          </div>
+        </div>
+    </div> 
+  </div>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-5 col-5">
+    <label>Reason for Recruitment</label>
+    </div>
+      <div class="form-group col-md-7 col-7">
+        <select class="form-control select2" name="recruitreason" id="recruitreason" [(ngModel)]="assigninhtmlctrl.RecruitReasonFKID"
+         (change)="onRecruitReason($event.target.value)" #nr>
+         <option value="0"></option>
+         <option *ngFor="let reason of reqservice.bindrecreason" value="{{reason.RecruitReasonPKID}}">
+           {{reason.RecruitReason}} </option>
+       </select>
+       <!-- <label for="recruitreason" class="error reason-error">This field is required.</label> -->
+    </div>
+  </div>
+  
+  </div><!--overview--> 
+  <div class="col-md-6 bg-white pt-4 pl-3 pr-3 pb-3 reqstn-fields">
+  <h4 class="pr-4 pt-3 pb-4 requisition-heading">Job Responsibilities and Skill</h4>
+  <div class="form-row formrow-text">
+    <div class="form-group col-md-4 col-4">
+    <label>Description</label>
+    </div>
+    <div class="form-group col-md-8 col-8">
+      <textarea rows="3" cols="40" name="Description" [(ngModel)]="assigninhtmlctrl.Description"
+      class="form-control" required></textarea>
+    </div>
+  </div>
+  <div class="form-row formrow-text">
+    <div class="form-group col-md-4">
+    <label>Mandatory Skills & corresponding experience</label>
+    </div>
+    
+    <div class="form-group col-md-8">
+      <div class="row">
+        <div class="col-md-9 col-8 pr-1">
+          <select class="form-control select2" name="mandskills" id="mandskills"
+          [(ngModel)]="assigninhtmlctrl.MandSkillsFKID" multiple="multiple">
+            <option value="0"></option>
+            <option *ngFor="let mskill of reqservice.bindMandSkills" value="{{mskill.SkillsPKID}}">
+              {{mskill.SkillsName}} </option>
+          </select>
+          <!-- <label for="status" class="error status-error">This field is required.</label> -->
+        </div>
+    <div class="col-md-3 col-4 pl-0">
+      <input type="button" value="ADD SKILLS" class="button-blue text-white rounded add-skill w-100"
+       id="addmandskills">
+      <!-- <button class="button-blue text-white rounded add-skill w-100" id="addskills" >ADD SKILLS</button> -->
+    </div>
+    <div class="form-group  row mt-3 mr-0 ml-3 spancss"> 
+      <span id="selectedMandSKills"></span>
+    </div>
+  <br>
+    </div>
+  </div>
+  </div>
+  <div class="form-row formrow-text mb-3">
+    <div class="form-group col-md-4">
+    <label>Good to have skills & corresponding experience</label>
+    </div>
+    <div class="form-group col-md-8 ">
+      <div class="row">
+        <div class="col-md-9 col-8 pr-1">
+          <select class="form-control select2" name="goodskills" id="goodskills"
+          [(ngModel)]="assigninhtmlctrl.GoodSkillsFKID" multiple="multiple">
+            <option value="0"></option>
+            <option *ngFor="let gskill of reqservice.bindMandSkills" value="{{gskill.SkillsPKID}}">
+              {{gskill.SkillsName}} </option>
+          </select>
+        </div>
+    <div class="col-md-3 col-4 pl-0">
+      <input type="button" value="ADD SKILLS" class="button-blue text-white rounded add-skill w-100"
+       id="addgoodskills">
+      <!-- <button class="button-blue text-white rounded add-skill w-100" >ADD SKILLS</button> -->
+    </div>
+    <div class="row ml-3 mt-3 spancss"> 
+      <span id="selectedGoodSkills"></span>
+      <!-- <p class="mb-1 mr-1 p-1 bg-grey rounded skill-details">Lorem ipsum
+        <button type="button" class="close close-skill" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </p>
+       -->
+    </div>
+  
+    </div>
+  </div>
+  </div>
+  
+  <div class="form-row formrow-height"> 
+    <div class="form-group col-md-4 col-4">      
+      <label>Salary</label>
+    </div>	
+    <div class="form-group col-md-8 col-8">
+      <input type="number" size="80" min="0" max="10000000" name="Salary" [(ngModel)]="assigninhtmlctrl.Salary" 
+      (keypress)="onlyNumber(event)" class="form-control" id="Salary" required> 
+      <!-- <span class="error" id="tele_err" style="display: none;">Please Enter your salary</span> -->
+      
+    </div>
+  </div>
+  </div>
+  </div><!--Row overview end-->
+  <div class="row bg-white">
+  <div class="col-md-6 bg-white pr-4 pt-0 pb-4 reqstn-fields">
+  <h4 class="pr-4 pt-2 pb-4 requisition-heading">Job Information</h4>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-5 col-5">
+    <label>Employment Type</label>
+    </div>
+      <div class="form-group col-md-7 col-7">
+        <select class="form-control select2" name="employment" id="employment" #empltype
+        [(ngModel)]="assigninhtmlctrl.EmploymentTypeFKID">
+          <option value="0"></option>
+          <option *ngFor="let etype of reqservice.bindemploytype" value="{{etype.EmploymentTypePKID}}">
+            {{etype.EmploymentTypeName}} </option>
+        </select>
+        <!-- <label for="employment" class="error employ-error">This field is required.</label> -->
+        <div class="row ml-0 mr-0">
+        <div class="form-group pl-0 col-md-7 col-7 mt-3" id="div_duration">
+          <!-- <input type="date" class="w-100"> -->
+          <!-- <select class="form-control select2" name="duration" id="duration" #dur 
+          [(ngModel)]="assigninhtmlctrl.DurationFKID">
+            <option value="0"></option>
+            <option value="1">3 Months</option>
+            <option value="2">6 Months</option>
+            <option value="3">1 Year</option>
+          </select> -->
+          <select class="form-control select2" name="duration" id="duration" #dur 
+          [(ngModel)]="assigninhtmlctrl.DurationFKID">
+            <option value="0"></option>
+            <option *ngFor="let duration of reqservice.bindduration" value="{{duration.StatusPKID}}">{{duration.StatusName}}</option>
+          </select>
+          </div>
+          <!-- <div class="form-group col-md-6 col-6 mt-3 bg-grey rounded"> 
+            <p class="mb-1 mr-1 p-1 text-center bg-grey rounded skill-details">
+              3 Months
+            </p>
+          </div> -->
+          </div>
+      </div>
+        
+  </div>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-5 col-5">
+    <label>Job Level</label>
+    </div>
+      <div class="form-group col-md-7 col-7">
+        <select class="form-control select2" name="joblevel" id="joblevel" #njl
+        [(ngModel)]="assigninhtmlctrl.JobLevelFKID">
+          <option value="0"></option>
+          <option *ngFor="let joblevel of reqservice.bindjoblevel" value="{{joblevel.JobLevelPKID}}">
+            {{joblevel.JobLevelName}} </option>
+        </select>
+        <!-- <label for="joblevel" class="error job-error">This field is required.</label> -->
+    </div>
+  </div>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-5 col-5">
+    <label>Shift</label>
+    </div>
+      <div class="form-group col-md-7 col-7">
+        <select class="form-control select2" name="shift" id="shift" #ns
+        [(ngModel)]="assigninhtmlctrl.ShiftFKID">
+          <option value="0"></option>
+          <option *ngFor="let shift of reqservice.bindshift" value="{{shift.ShiftPKID}}">
+            {{shift.ShiftType}} </option>
+        </select>
+        <!-- <label for="shift" class="error shift-error">This field is required.</label> -->
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-5 col-5">
+    <label>Travel</label>
+    </div>
+      <div class="form-group col-md-7 col-7">
+        <select class="form-control select2" name="travel" id="travel" #nt
+        [(ngModel)]="assigninhtmlctrl.TravelFKID" (change)="onTravelChange($event.target.value)">
+          <option value="0"></option>
+          <option *ngFor="let travel of reqservice.bindtravel" value="{{travel.TravelPKID}}">
+            {{travel.TravelType}} </option>
+        </select>
+        <!-- <label for="travel" class="error travel-error ">This field is required.</label> -->
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+    <label>Questionnaire</label>
+    </div>
+    <div class="form-group col-md-12">
+      <textarea rows="10" id="QuestionnaireFKID" name="QuestionnaireFKID" required
+      [(ngModel)]="assigninhtmlctrl.QuestionnaireFKID"></textarea>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-6 bg-white pr-4 pt-0 pb-4 reqstn-fields">
+  <h4 class="pr-4 pt-2 pb-4 requisition-heading">Process & Owners</h4>
+  
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-4">
+    <label>Interview Rounds</label>
+    </div>
+    <div class="form-group col-md-8 ">
+      <div class="row">
+        <div class="col-md-8 col-8 pr-1">
+          <select class="form-control select2" name="interviewlevel" id="interviewlevel"
+          [(ngModel)]="assigninhtmlctrl.InterviewLevelFKID" multiple="multiple">
+            <option value="0"></option>
+            <option *ngFor="let intlevel of reqservice.bindinterlevel" value="{{intlevel.InterviewLevelPKID}}">
+              {{intlevel.InterviewLevelType}} </option>
+          </select>
+          <!-- <label for="status" class="error status-error">This field is required.</label> -->
+        </div>
+    <div class="col-md-4 col-4 pl-0 pr-0">
+      <input type="button" value="ADD INTERVIEWROUND" class="button-blue text-white rounded add-skill w-100"
+       id="addinterviewlevel">
+      <!-- <button class="button-blue text-white rounded add-interview w-100">ADD INTERVIEW ROUND</button> -->
+    </div>
+    <div class="row ml-3 mt-3 spancss"> 
+      <span id="selectedInterLevels"></span>
+    </div>
+  
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-4">
+    <label>Approver</label>
+    </div>
+    <div class="form-group col-md-8 ">
+      <div class="row">
+        <div class="col-md-8 col-8 pr-1">
+          <select class="form-control select2" name="approver" id="approver"
+          [(ngModel)]="assigninhtmlctrl.ApproverFKID" multiple="multiple">
+            <option value="0"></option>
+            <option *ngFor="let user of reqservice.bindapprover" value="{{user.UserPKID}}">
+              {{user.UserName}} - {{user.RoleTitle}} </option>
+          </select>
+        </div>
+    <div class="col-md-4 col-4 pl-0 pr-0">
+      <input type="button" value="ADD APPROVER" class="button-blue text-white rounded add-skill w-100"
+      id="addapprover">
+      <!-- <button class="button-blue text-white rounded add-approver w-100">ADD APPROVER</button> -->
+    </div>
+    <div class="row ml-3 mt-3 spancss"> 
+      <span id="selectedApprovers"></span>
+    </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-4">
+    <label>Collaborators</label>
+    </div>
+    <div class="form-group col-md-8 ">
+      <div class="row">
+        <div class="col-md-8 col-8 pr-1">
+          <select class="form-control select2" name="collaborator" id="collaborator"
+          [(ngModel)]="assigninhtmlctrl.CollaboratorFKID" multiple="multiple">
+            <option value="0"></option>
+            <option *ngFor="let collab of reqservice.bindcollaborator" value="{{collab.UserPKID}}">
+              {{collab.UserName}} </option>
+          </select>
+        </div>
+    <div class="col-md-4 pl-0 col-4 pr-0">
+      <input type="button" value="ADD COLLABORATORS" class="button-blue text-white rounded add-skill w-100"
+      id="addcollaborators">
+      <!-- <button class="button-blue text-white rounded add-collaborator w-100">ADD COLLABORATORS</button> -->
+    </div>
+    <div class="row ml-3 mt-3 spancss"> 
+      <span id="selectedCollaborators"></span>
+    </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-4">
+    <label>Status</label>
+    </div>
+      <div class="form-group col-md-8">
+        <select class="form-control select2" name="status"  id="status" #ns
+        [(ngModel)]="assigninhtmlctrl.StatusFKID" (change)="onStatusChange($event.target.value)">
+          <option value="0"></option>
+          <option *ngFor="let stat of reqservice.bindstatus" value="{{stat.StatusPKID}}">
+            {{stat.StatusName}} </option>
+        </select>
+    </div>
+  </div>
+  <div class="form-row formrow-height">
+    <div class="form-group col-md-4">
+    <label>Additional notes</label>
+    </div>
+    <div class="form-group col-md-8">
+      <textarea rows="3" cols="40" name="AdditionalNotes" id="AdditionalNotes" [(ngModel)]="assigninhtmlctrl.AdditionalNotes"
+       class="form-control" required></textarea>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="row mx-auto w-100 mb-5 text-right">
+  <!-- <button class="button-blue text-white newrequistion-btn float-right mr-5 submit-requistion" id="submit" (click)="Validatenewrqst()">Submit</button> -->
+  
+  <div class="col-md-2 col-9 offset-1 offset-md-0 pr-0 pb-3">
+    <!-- <button class="btn btn-light-grey float-right w-100">APPROVE</button> -->
+  </div>
+  <div class="col-md-2 col-9 offset-1 offset-md-0 pr-0 pb-3">
+    <!-- <button class="btn btn-dark float-right w-100">REJECT</button> -->
+  </div>
+  <div class="col-md-2 col-9 offset-1 offset-md-0 pr-0 pb-3">
+    <button class="btn btn-green float-right w-100 draft" (click)="SubmitNewReq_SaveasDraft(newrequform)">SAVE AS DRAFT</button>
+  </div>
+  <div class="col-md-2 col-9 offset-1 offset-md-0 pr-0 pb-3">
+    <button class="btn btn-dark-blue float-right  w-100" [disabled]="newrequform.invalid" (click)="SubmitNewRequistion(newrequform)">PUBLISH</button>
+    <!-- <button class="btn btn-light-blue float-right w-100 template">SAVE AS TEMPLATE</button>
+    (ngSubmit)="SubmitNewRequistion(newrequform)" -->
+  </div>
+  <div class="col-md-2 col-9 offset-1 offset-md-0 pr-0 pb-3">    
+    <button type="reset" (click)="clickCancel()" class="float-right btn-red text-white btn w-100">CANCEL</button>
+  </div>
+  <div class="col-md-2 col-9 offset-1 offset-md-0 reset-btn">
+  </div>
+  
+  
+  
+  
+  </div>
+  
+  </div><!--Row-information&owners-->
+  
+  </form>		
+  		
+  
+  <!-- Main Col END -->
+
+</div>
+</div>
+<!-- body-row END -->
+    </header>
+    
+    <section>
+
+    </section>
+
+        <footer>
+
+        </footer>
+    </div>
+</div>

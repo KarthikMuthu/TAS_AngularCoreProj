@@ -1,41 +1,50 @@
 <div class="wrapper">
     <div class="container form-cntr">
         <div class="row mx-auto lg-frm">
-            <div class="col-md-6 border pl-5 pr-5 pt-3 pb-3 bg-white">
+            <div class="col-md-6 border form-column pl-5 pr-5 pt-3 pb-3 bg-white">
                 <div class="row">
                     <div class="col-5 mt-3">
                         <img src="assets/6Solvelogo.jpg" class="img-fluid">
                     </div>
                 </div> 
+				<div id="form-olvidado1">
                 <div class="row">
                     <div class="col-11 pt-3">                        
                         <h3 class="heading-color">Welcome back!</h3>
                         <p class="text-color lgn-font-size">Enter your email-address and password to <br>access admin panel.
                     </div> 
                 </div>
-                <div class="row"> 
+				<div class="row"> 
                     <div class="col-12 mb-3">
-                    <form name="RegForm" id="Registr_form" action="submit.php" method="post"> 
+                    <form (ngSubmit)="Submit(loginform)" autocomplete="on" #loginform="ngForm" id="Registr_form" method="post"> 
                         <div class="form-row"> 
                             <div class="form-group email-pass">
                                 <label class="text-color ">Email Address</label> 
                                     <div class="d-flex">
-                                        <span class="p-1 border rounded-left"><i-feather name="Mail" class="icon-color"></i-feather></span><input type="text" size=65 name="email"class="email required input-field" title="Please enter the email address" autocomplete="off" > 
-                                    
+                                    <span class="p-1 border rounded-left"><i-feather name="Mail" 
+                                    class="icon-color"></i-feather></span><input type="text" size=65 
+                                    name="UserEmail" class="email required input-field" [(ngModel)]="objloginform.UserEmail"
+                                    title="Please enter the Email Address" autocomplete="off" #UserEmail="ngModel">                                     
                                     </div>
-                                    <label id="email-error" class="error email-error" for="email"></label>
+                                    <label id="email-error" class="error email-error" for="UserEmail"></label>
                             </div>
                             <div class="form-group email-pass">
-                                <label class="text-color ">Password</label><label class="float-right"><a href="#" class="text-color">Forgot your password?</a></label> 
+                                <label class="text-color ">Password</label><label class="float-right"><a href="javascript:void(0)" class="text-color" id="olvidado" (click)="forgotpassword_click()">Forgot your password?</a></label> 
                                     <div class="d-flex">     
-                                        <span class="p-1 border rounded-left"><i-feather name="Lock" class="icon-color"></i-feather></span><input type="password" size=65 name="password" class="input-field required" title="Please enter the password" id="password">      
+                                        <span class="p-1 border rounded-left"><i-feather name="Lock" class="icon-color"></i-feather></span>
+                                        <input type="password" size=65 name="OldPassword" class="input-field required" 
+                                        title="Please enter the password" [(ngModel)]="objloginform.OldPassword" #OldPassword="ngModel">      
                                     </div>
-                                    <label id="password-error" class="error password-error" for="password"></label>
+                                    <label id="password-error" class="error password-error" for="OldPassword"
+                                    ></label>
                             </div>
                             <div class="form-group">
                                 <label class="customcheck">
-                                    <input type="checkbox">Remember me <span class="checkmark"></span>
-                                </label>
+                                    <input type="checkbox" [(ngModel)]="objloginform.IsRemember" name="IsRemember"
+                                     #IsRemember="ngModel" (change)="isrememberchange($event)" >
+                                     Remember me <span class="checkmark"></span>
+                                </label><br>
+                                <!-- <label id="password-error" class="error password-error" for="IsRemember"></label> -->
                             </div>
                             <button class="w-100 button-blue text-white login-btn" id="submit" (click)="CheckValidate()">Login</button>
                                 <div class="text-center w-100 p-1">(or)</div>
@@ -43,9 +52,43 @@
                         </div> 
                     </form>
                     </div>
- 
                 </div>
-            </div>
+                </div><!--login form-olvidado-->
+                <div id="form-olvidado">
+                    <div class="row">
+                    <div class="col-11 pt-3">                        
+                        <h3 class="heading-color">Reset Password</h3>
+                        <p class="text-color lgn-font-size">Enter your email-address and we'll send you an email with<br>instructions to reset  your password</p>
+                    </div> 
+                </div>
+                <form name="RegForm" id="forgotpswd" method="post"> 
+                <div class="col-12 mb-3">                    
+                        <div class="row">
+                        <div class="form-row"> 
+                            <div class="form-group email-pass">
+                                <label class="text-color ">Email Address</label> 
+                                    <div class="d-flex">
+                                        <span class="p-1 border rounded-left"><i-feather name="Mail" class="icon-color"></i-feather></span><input type="text" size=65 name="email"class="email required input-field" title="Please enter the Email Address" autocomplete="off" > 
+                                    
+                                    </div>
+                                    <label id="email-error" class="error email-error" for="email"></label>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <div class="col-12 mb-3">                    
+                        <div class="row">
+                        <div class="form-row">
+                            <button class="w-100 button-blue text-white login-btn" id="submit" (click)="CheckValidatepwd()">Submit</button>
+                        </div>
+                        </div>
+                        
+                 </div>
+                </form> 
+                    
+                </div>
+				</div><!--first column-->
+				 
             <div class="col-md-6 pl-0 form-img">
                 <img src="assets/450-520.jpg" class="img-fluid">
                 
@@ -57,8 +100,12 @@
                                 <p class="text-center text-white">-Admin User</p>
                         </div> 
                     </div>
-                </div>
+                </div> 
             </div>
-        </div>
-    </div><!--container end-->
+	    </div>
+				
+        <p id="acceso" class="text-center">Back to&nbsp;<a class="text-color-blue font-weight-bold" href="javascript:void(0)" (click)="backtologin_click()" id="loginacceso">Login</a></p>	
+		 		
+				
+	</div><!--container end-->
 </div><!--wrapper end-->

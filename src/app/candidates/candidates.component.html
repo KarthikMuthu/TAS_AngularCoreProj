@@ -21,27 +21,89 @@
                 </div>
           </li>
           <li class="dropdown p-2">
-              <a href="#" class="dropdown-toggle notify-bell" data-toggle="dropdown" role="button"
-               aria-haspopup="true" aria-expanded="false" (click)="clearCount()">
-                <a href="#" data-toggle="tooltip" data-placement="left">
-                  <span [matBadge]="notificationcount" [matBadgeHidden]="notificationcount == 0"  matBadgeColor="accent"><i-feather name="bell" class="icon-color">                            
-                          </i-feather></span>
-                  
+              <a href="#" class="dropdown-toggle notify-bell" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a href="#" data-toggle="tooltip" data-placement="left" title="8 new unread notifications">
+                  <i-feather name="bell" class="icon-color"></i-feather><span class="dot"></span>
                 </a>
               </a>
               <ul class="dropdown-menu notify-drop">
                 <div class="notify-drop-title">
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                          <span [matBadge]="notificationcount" [matBadgeHidden]="notificationcount == 0" matBadgeColor="accent">Notifications</span>
-                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">Notification (<b>2</b>)</div>
                         <div class="col-md-6 col-sm-6 col-xs-6 text-right">Clear all</div>
                     </div>
                 </div>
-                <div class="drop-content text-center descriptioncolor">
-                    <a *ngFor = "let notify of dashservice.bindnotification">{{notify.Description}}</a><hr>
-                    <br>
-                   <a href="javascript:void(0)" (click)="goNotifications()">See all notifications</a>
+                <div class="drop-content">
+                    <li>
+                        <div class="row">
+                        <div class="col-2 col-md-2 notify-img">
+                          <i-feather name="user" class="icon-color"></i-feather>
+                        </div>
+                        <div class="col-9 col-md-9 offset-1">
+                          <p>Lorem ipsum sit dolor amet consilium.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                          <div class="col-2 col-md-2 notify-img">
+                            <i-feather name="user" class="icon-color"></i-feather>
+                          </div>
+                          <div class="col-9 col-md-9 offset-1">
+                            <p>Lorem ipsum sit dolor amet consilium.</p>
+                          </div>
+                        </div>
+                    </li>
                 </div>
               </ul>
             </li>
@@ -98,7 +160,7 @@
                   </div>
               </a>
               <!-- /END Separator -->
-              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0" (click)="NavigateTasks()">
+              <a href="/tasks" class="list-group-item list-group-item-action border-0">
                   <div class="d-flex w-100 justify-content-start align-items-center">
                       <span class="menu-collapsed" id="taskspanid"><i-feather name="bookmark" class="mr-4"></i-feather>Tasks</span>
                   </div>
@@ -108,7 +170,7 @@
                       <span class="menu-collapsed" id="reqspanid"><i-feather name="briefcase" class="mr-4"></i-feather>Requisition</span>
                   </div>
               </a>
-              <a href="javascript:void(0)" class="list-group-item list-group-item-action border-0" (click)="NavigateCandidates()">
+              <a href="/candidates" class="list-group-item list-group-item-action border-0">
                   <div class="d-flex w-100 justify-content-start align-items-center">
                       <span class="menu-collapsed" id="candspanid"><i-feather name="award" class="mr-4"></i-feather>Candidates</span>
                   </div>
@@ -161,12 +223,12 @@
                 <small>NAVIGATION</small>
             </li>
         
-            <a href="/dashboard" id="dashid" class="list-group-item active list-group-item-action">
+            <a href="/dashboard" id="dashid" class="list-group-item active list-group-item-action active">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="menu-collapsed" id="dashspanid"><i-feather name="home" class="mr-4"></i-feather>Dashboard</span>
                 </div>
             </a>
-            <a href="javascript:void(0)" id="taskid" class="list-group-item list-group-item-action " (click)="NavigateTasks()">
+            <a href="/tasks" id="taskid" class="list-group-item list-group-item-action ">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="menu-collapsed" id="taskspanid"><i-feather name="bookmark"  class="mr-4"></i-feather>Tasks</span>
                 </div>
@@ -176,7 +238,7 @@
                     <span class="menu-collapsed" id="reqspanid" ><i-feather name="briefcase" class="mr-4"></i-feather>Requisition</span>
                 </div>
             </a>
-            <a href="javascript:void(0)" id="candid" class="list-group-item list-group-item-action " (click)="NavigateCandidates()">
+            <a href="/candidates" id="candid" class="list-group-item list-group-item-action ">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="menu-collapsed" id="candspanid"><i-feather name="award" class="mr-4"></i-feather>Candidates</span>
                 </div>
@@ -263,289 +325,180 @@
 
 <!-- MAIN -->
 <div class="col py-3 p-4">
-<div class="row candidate-search m-0 p-3">
-    <div class="col-10 col-md-5 offset-md-6 offset-0">
-        <div class="main">
-            <!-- Actual search box -->
-            <div class="form-group has-search color-code-search">
-              <i-feather name="search" class="icon-color form-control-feedback"></i-feather>
-              <input type="text" class="form-control" id="search" placeholder="Search Candidate">
-            </div>
-          </div>
-    </div>
-    <div class="col-1 candidate-searchlist">
-        <div class="btn-group">
-          <button type="button" class="btn dropdown-toggle cand-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="javascript:void(0)">Date of Applied</a>
-            <a class="dropdown-item" href="javascript:void(0)">Date of Interview</a>
-            <a class="dropdown-item" href="javascript:void(0)">Date of Joined</a>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="console"></div>
+  <div class="tables">
+  <h3 class="p-3">Candidates</h3>
+    <div class="row mx-auto">
+      <div class="col-md-6">
+        <div class="example-header">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+          </mat-form-field>
         </div>
       </div>
-</div>
-<h3 class="pb-3 pt-3">REQUISITION</h3>
-<div class="card-deck req-card">
+      
+      <!-- <div class="col-md-4 offset-md-2 offset-0">
+          <form class="form-inline" action="/action_page.php">
+              <div class="form-group">
+                <label for="search" class="pr-4">Search:</label>
+                <input type="search" id="search" value="" class="form-control" placeholder="Search">
+              </div>
+            </form>
+      </div> -->
+    </div>
+      <div class="example-container mat-elevation-z8">
+    
+        <mat-table [dataSource]="dataSource" matSort>
+      
+          <!-- ID Column -->
+          <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+          </ng-container>
+      
+          <!-- Progress Column -->
+          <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+          </ng-container>
+      
+          <!-- Name Column -->
+          <!-- <ng-container matColumnDef="appliedate">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Applied Date </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.appliedate}} </mat-cell>
+          </ng-container> -->
+      
+          <!-- Color Column -->
+          <ng-container matColumnDef="areaexpertise">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Area of Expertise </mat-header-cell>
+            <mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.areaexpertise}} </mat-cell>
+          </ng-container>
   
-  <div class="card requisition-card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-xl-12 col-12 req">
-            <p class="card-text font-weight-bold">REQUISITIONS LIST</p>
-            <!-- requisition-card <p class="card-text">Lorem is simply dummy text of the printing and typesetting industry.</p> -->
-          </div>
-        </div><br>
-        <div class="row">
-          <div class="col-xl-12 col-12 req create-req" id="draftedrequisitions">   
-            <a href="javascript:void(0)" (click)="clicktoViewRequisitionList()">Click to view the 
-              Requisition List</a>
-            <!-- <ul>
-              <li *ngFor="let bind_sdraft of dashservice.bind_draftsaved">
-                <a href="javascript:void(0)" (click)="clickDraftedReq(bind_sdraft.JobRequisitionPKID)">
-                  {{bind_sdraft.JobRequisitionPKID}} - {{bind_sdraft.Salary}}.. ReadMore</a>
-              </li>
-            </ul> -->
-            <!-- <button class="btn btn-primary" (click)="CreateNewReq()">CREATE NEW</button> -->
-           
-          </div>
+          <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
+            <mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.status}} </mat-cell>
+          </ng-container>
+  
+          <!-- <ng-container matColumnDef="stage">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Stage </mat-header-cell>
+            <mat-cell *matCellDef="let element" [style.color]="row.color"> {{element.stage}} </mat-cell>
+          </ng-container> -->
+  
+          <!-- <ng-container matColumnDef="strength">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Strength </mat-header-cell>
+            <mat-cell *matCellDef="let element" [style.color]="row.color"> {{element.strength}} </mat-cell>
+          </ng-container>
+  
+          <ng-container matColumnDef="weakness">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Weakness </mat-header-cell>
+            <mat-cell *matCellDef="let element" [style.color]="row.color"> {{element.weakness}} </mat-cell>
+          </ng-container> -->
+      
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;">
+          </mat-row>
+        </mat-table>
+      
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+      </div>
+  
+  <!-- <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Applied Date</th>
+          <th>Area of Expertise</th>
+          <th>Status</th>
+          <th>Stage</th>
+          <th>Strength</th>
+          <th>Weakness</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><a href="#">Radha</a></td>
+          <td>25/03/2020</td>
+          <td>Digital Marketing</td>
+          <td>Process</td>
+          <td>Technical Round</td>
+          <td>Lorem</td>
+          <td>Ipsum</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a href="#">Rani</a></td>
+          <td>25/03/2020</td>
+          <td>Human Resource</td>
+          <td>Process</td>
+          <td>Personal Interview</td>
+          <td>Lorem</td>
+          <td>Ipsum</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a href="#">Raji</a></td>
+          <td>25/03/2020</td>
+          <td>Designer</td>
+          <td>Process</td>
+          <td>Technical Round</td>
+          <td>Lorem</td>
+          <td>Ipsum</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><a href="#">Chitra</a></td>
+          <td>25/03/2020</td>
+          <td>Solution Architect</td>
+          <td>Completed</td>
+          <td>Selected</td>
+          <td>Lorem</td>
+          <td>Ipsum</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><a href="#">Surya</a></td>
+          <td>25/03/2020</td>
+          <td>Developer</td>
+          <td>Completed</td>
+          <td>Hired</td>
+          <td>Lorem</td>
+          <td>Ipsum</td>
+        </tr>
+      </tbody>
+    </table>  -->
+    <!-- <div class="row mx-auto">
+        <div class="col-md-6 pt-3">
+          <p>Showing 1 to 8 of 12 entries</p>
         </div>
-    </div>
-    </div>
-  <!-- <div class="card requisition-card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-xl-12 col-12 req">
-            <p class="card-text font-weight-bold">DRAFTED REQUISITIONS</p>
-            
-          </div>
-        </div><br>
-        <div class="row">
-          <div class="col-xl-12 col-12 req create-req" id="draftedrequisitions">          
-            <ul>
-              <li *ngFor="let bind_sdraft of dashservice.bind_draftsaved">
-                <a href="javascript:void(0)" (click)="clickDraftedReq(bind_sdraft.JobRequisitionPKID)">
-                  {{bind_sdraft.JobRequisitionPKID}} - {{bind_sdraft.Salary}}.. ReadMore</a>
-              </li>
-            </ul>
-            
-           
-          </div>
-        </div>
-    </div>
-</div> -->
-<div class="card requisition-card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-xl-7 req">
-            <p class="card-text font-weight-bold">CREATE A NEW REQUISITION</p>
-            <!-- requisition-card <p class="card-text">Lorem is simply dummy text of the printing and typesetting industry.</p> -->
-          </div>
-          <div class="col-xl-5 req create-req">
-            <button class="btn btn-primary" id="createnewreq" (click)="CreateNewReq()">CREATE NEW</button>
-          </div>
-        </div>
-    </div>
-</div>
-<div class="card due-date">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-xl-9 req date">
-            <h3 class="card-text pl-4 pt-5">Due Date</h3>
-          </div>
-          <div class="col-xl-3 req date">
-            <a href="javascript:void(0)">
-            <h1 class="card-text pt-5">{{duedate}}</h1>
-          </a>
-          </div>
-        </div>
-    </div>
-</div>
-<div class="card pre-due-date">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-xl-9 req date">
-            <h3 class="card-text pl-4 pt-5">Pre Due Date</h3>
-          </div>
-          <div class="col-xl-3 req date">
-            <a href="javascript:void(0)">
-            <h1 class="card-text pt-5">{{preduedate}}</h1>
-            </a>
-          </div>
-        </div>
-    </div>
-</div>
-</div>
-<h3 class="pt-3 pb-3">CANDIDATES</h3>
-  <div class="row mx-auto cand-card">
-    <div class="col-md-4 pl-0">
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-            <h4 class="card-text pb-3">Candidates Assigned</h4>
-          </div>
-          <div class="col-12 pb-3">
-            <h1>20</h1>
-          </div>
-          <div class="col-12 pb-3">
-            <div class="progress">
-              <div class="progress-bar bar-length"></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <p>36% Avg</p>
-          </div>
-          </div>
-    </div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-            <h4 class="card-text pb-3">Graphic Designer</h4>
-          </div>
-          <div class="col-12 pb-3">
-            <h1>10</h1>
-          </div>
-          <div class="col-12 pb-3">
-            <div class="progress">
-              <div class="progress-bar bar-length-1"></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <p>20% Avg</p>
-          </div>
-          </div>
-    </div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-            <h4 class="card-text pb-3">Recruitment Process</h4>
-          </div>
-          <div class="col-12 pb-3">
-            <h1>05</h1>
-          </div>
-          <div class="col-12 pb-3">
-            <div class="progress">
-              <div class="progress-bar bar-length-2"></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <p>20% Avg</p>
-          </div>
-          </div>
-    </div>
-</div>
-</div>
-</div>
-  <div class="row mx-auto mt-3 cand-card">
-    <div class="col-md-4 pl-0">
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-            <h4 class="card-text pb-3">Offer Stage</h4>
-          </div>
-          <div class="col-12 pb-3">
-            <h1>3</h1>
-          </div>
-          <div class="col-12 pb-3">
-            <div class="progress">
-              <div class="progress-bar bar-length-3"></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <p>36% Avg</p>
-          </div>
-          </div>
-    </div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-12">
-            <h4 class="card-text pb-3">Hired</h4>
-          </div>
-          <div class="col-12 pb-3">
-            <h1>2</h1>
-          </div>
-          <div class="col-12 pb-3">
-            <div class="progress">
-              <div class="progress-bar bar-length-4"></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <p>20% Avg</p>
-          </div>
-          </div>
-    </div>
-</div>
-</div>
-</div>
-<h3 class="pb-3 pt-3">TASKS</h3>
-<div class="row mx-auto">
-<div class="col-12 col-md-4 pl-0">
-<div class="card-deck cand-card">
-<div class="card">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-8">
-                <h1>23</h1>
-                <p>Total Tasks</p>
-            </div>
-            <div class="col-4">
-              <i-feather name="activity" class="icon-color mr-4"></i-feather>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-8">
-                <h1>15</h1>
-                <p>Due Today</p>
-            </div>
-            <div class="col-4">
-              <i-feather name="clock" class="icon-color mr-4"></i-feather>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-8">
-                <h1>05</h1>
-                <p>Over Due</p>
-            </div>
-            <div class="col-4">
-              <i-feather name="command" class="icon-color mr-4"></i-feather>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-8">
-                <h1>15</h1>
-                <p>Due Later</p>
-            </div>
-            <div class="col-4">
-              <i-feather name="life-buoy" class="icon-color mr-4"></i-feather>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
+        <div class="col-md-6">
+          <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+      </div>
+    </div> -->
+    
+  
+  
+  </div>
+  
+  </div>
 <!-- Main Col END -->
 
 </div>
